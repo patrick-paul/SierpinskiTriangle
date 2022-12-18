@@ -1,0 +1,115 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="triangle/triangle.css" />
+    <title>theTriangele</title>
+  </head>
+  <body>
+    <div id="collector">
+      <div id="beggin_world">
+        <img
+          src="images/power.png"
+          title="Let's Beggin"
+          onclick="document.getElementById('beggin_world').style.display = 'none'"
+          class="beggin"
+        />
+      </div>
+      <h2>Eerie Image Generator</h2>
+      <h3>Sapinski Triangle (A Famous Fractal)</h3>
+      <span id="dot1">.</span>
+      <span id="dot2">.</span>
+      <span id="dot3">.</span>
+      <span id="dot4">.</span>
+      <span class="same" id="me"
+        >Made by
+        <a
+          href="https://www.instagram.com/patric_forreal"
+          target="__blank"
+          style="color: #fa7c7c; text-decoration: none"
+          >@patic_forreal</a
+        ></span
+      >
+      <input
+        type="text"
+        name="number"
+        id="numberInput"
+        placeholder="Number Of Dots"
+        onmouseover="this.placeholder=''"
+        onmouseout="if(this.value == ''){this.placeholder='Number Of Dots'}"
+        pattern="\d*"
+        maxlength="5"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <input
+        type="button"
+        value="Submit"
+        id="btn"
+        class="btns"
+        onclick="inputChecker()"
+      />
+      <input
+        type="button"
+        value="Refresh Page"
+        id="btnReload"
+        class="btns"
+        onclick="window.open('index.html' , '_self')"
+      />
+      <div class="container">
+        <div class="neural">
+          <span class="legend">Info Box</span>
+        </div>
+        <br />
+        <span id="takeInfo">Waiting for Number Of Dots...</span>
+      </div>
+      <div class="containerLoder" id="colapa">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+      </div>
+      <div id="dialogoverlay"></div>
+      <div id="dialogbox">
+        <div>
+          <div id="dialogboxhead"></div>
+          <div id="dialogboxbody"></div>
+          <div id="dialogboxfoot"></div>
+        </div>
+      </div>
+    </div>
+    <div id="displayer">
+      <p>
+        Oooh! It Looks Like You Have A smaller display Screen!!!
+        <br />
+        This Software works only in 15.6 Inch Screen and Above!!!
+        <br />
+        Sorry... :(
+        <br />
+        <br />
+        NOTE:
+        <br />
+        If Your Screen Is 15.6 Inch Or Above And Your Getting This Error....
+        <br />
+        Try To Maximaize Your Windows!!!
+        <br />
+        Or Resize It By Icreasing Its Size In Both Height & Width!!!
+      </p>
+    </div>
+
+    <script src="triangle/triangle.js"></script>
+  </body>
+</html>
